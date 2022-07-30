@@ -135,7 +135,7 @@ function runTests() {
     const previousWord = document.getElementById('previous-word')
     const winDisplay = document.getElementById('wins')
     const lossDisplay = document.getElementById('losses')
-    const pressKey = letter => body.dispatchEvent(new KeyboardEvent('keyup', { key: letter }))
+    const pressKey = letter => document.dispatchEvent(new KeyboardEvent('keyup', { key: letter }))
     afterEach(() => {
       sinon.restore()
     })
